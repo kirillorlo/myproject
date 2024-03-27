@@ -1,0 +1,127 @@
+INFO 2024-03-27 21:02:42,218 autoreload 15036 6964 Watching for file changes with StatReloader
+WARNING 2024-03-27 21:02:45,508 log 15036 3512 Not Found: /
+WARNING 2024-03-27 21:02:45,508 basehttp 15036 3512 "GET / HTTP/1.1" 404 2169
+INFO 2024-03-27 21:02:53,238 views 15036 3512 Index page accessed
+INFO 2024-03-27 21:02:53,239 basehttp 15036 3512 "GET /prefix/ HTTP/1.1" 200 13
+INFO 2024-03-27 21:03:12,466 views 15036 3512 Index page accessed
+INFO 2024-03-27 21:03:12,467 basehttp 15036 3512 "GET /prefix/ HTTP/1.1" 200 13
+INFO 2024-03-27 21:03:17,523 views 15036 3512 Index page accessed
+INFO 2024-03-27 21:03:17,524 basehttp 15036 3512 "GET /prefix/ HTTP/1.1" 200 13
+WARNING 2024-03-27 21:03:20,081 log 15036 3512 Not Found: /index/about
+WARNING 2024-03-27 21:03:20,082 basehttp 15036 3512 "GET /index/about HTTP/1.1" 404 2220
+WARNING 2024-03-27 21:03:24,973 log 15036 3512 Not Found: /index/
+WARNING 2024-03-27 21:03:24,974 basehttp 15036 3512 "GET /index/ HTTP/1.1" 404 2205
+WARNING 2024-03-27 21:03:25,870 log 15036 3512 Not Found: /index/
+WARNING 2024-03-27 21:03:25,871 basehttp 15036 3512 "GET /index/ HTTP/1.1" 404 2205
+INFO 2024-03-27 21:03:34,596 autoreload 15036 6964 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:03:35,257 autoreload 17836 11028 Watching for file changes with StatReloader
+WARNING 2024-03-27 21:03:36,200 log 17836 5912 Not Found: /index/
+WARNING 2024-03-27 21:03:36,201 basehttp 17836 5912 "GET /index/ HTTP/1.1" 404 2426
+WARNING 2024-03-27 21:03:37,678 log 17836 5912 Not Found: /index/
+WARNING 2024-03-27 21:03:37,679 basehttp 17836 5912 "GET /index/ HTTP/1.1" 404 2426
+WARNING 2024-03-27 21:03:38,254 log 17836 5912 Not Found: /index/
+WARNING 2024-03-27 21:03:38,255 basehttp 17836 5912 "GET /index/ HTTP/1.1" 404 2426
+WARNING 2024-03-27 21:04:13,057 log 17836 5912 Not Found: /index/
+WARNING 2024-03-27 21:04:13,058 basehttp 17836 5912 "GET /index/ HTTP/1.1" 404 2426
+INFO 2024-03-27 21:04:15,353 views 17836 5912 Index page accessed
+INFO 2024-03-27 21:04:15,353 basehttp 17836 5912 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 21:04:44,962 autoreload 17836 11028 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:04:45,570 autoreload 18156 19516 Watching for file changes with StatReloader
+INFO 2024-03-27 21:04:47,014 autoreload 18156 19516 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:04:47,616 autoreload 2816 19472 Watching for file changes with StatReloader
+INFO 2024-03-27 21:04:49,050 autoreload 2816 19472 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:04:49,753 autoreload 8292 15532 Watching for file changes with StatReloader
+WARNING 2024-03-27 21:04:50,183 log 8292 5544 Not Found: /
+WARNING 2024-03-27 21:04:50,184 basehttp 8292 5544 "GET / HTTP/1.1" 404 2169
+WARNING 2024-03-27 21:04:51,193 log 8292 5544 Not Found: /
+WARNING 2024-03-27 21:04:51,194 basehttp 8292 5544 "GET / HTTP/1.1" 404 2169
+INFO 2024-03-27 21:04:56,351 autoreload 8292 15532 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:04:56,965 autoreload 15760 3456 Watching for file changes with StatReloader
+WARNING 2024-03-27 21:04:57,982 log 15760 21156 Not Found: /
+WARNING 2024-03-27 21:04:57,983 basehttp 15760 21156 "GET / HTTP/1.1" 404 2168
+WARNING 2024-03-27 21:04:58,598 log 15760 21156 Not Found: /
+WARNING 2024-03-27 21:04:58,598 basehttp 15760 21156 "GET / HTTP/1.1" 404 2168
+INFO 2024-03-27 21:05:03,594 autoreload 15760 3456 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:05:04,225 autoreload 18688 10216 Watching for file changes with StatReloader
+INFO 2024-03-27 21:05:06,675 autoreload 18688 10216 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:05:07,274 autoreload 11984 21212 Watching for file changes with StatReloader
+INFO 2024-03-27 21:05:08,693 autoreload 11984 21212 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:05:09,340 autoreload 132 10972 Watching for file changes with StatReloader
+INFO 2024-03-27 21:05:10,763 autoreload 132 10972 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:05:11,346 autoreload 1744 13300 Watching for file changes with StatReloader
+WARNING 2024-03-27 21:05:13,166 log 1744 15492 Not Found: /
+WARNING 2024-03-27 21:05:13,167 basehttp 1744 15492 "GET / HTTP/1.1" 404 2169
+WARNING 2024-03-27 21:05:14,051 log 1744 15492 Not Found: /
+WARNING 2024-03-27 21:05:14,053 basehttp 1744 15492 "GET / HTTP/1.1" 404 2169
+WARNING 2024-03-27 21:06:08,970 log 1744 15492 Not Found: /about/
+WARNING 2024-03-27 21:06:08,970 basehttp 1744 15492 "GET /about/ HTTP/1.1" 404 2205
+WARNING 2024-03-27 21:06:10,291 log 1744 15492 Not Found: /about/
+WARNING 2024-03-27 21:06:10,292 basehttp 1744 15492 "GET /about/ HTTP/1.1" 404 2205
+WARNING 2024-03-27 21:07:02,864 log 1744 15492 Not Found: /
+WARNING 2024-03-27 21:07:02,865 basehttp 1744 15492 "GET / HTTP/1.1" 404 2169
+INFO 2024-03-27 21:07:16,336 autoreload 1744 13300 C:\Users\User\Desktop\django_home_work\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-27 21:07:16,966 autoreload 13080 13288 Watching for file changes with StatReloader
+INFO 2024-03-27 21:07:18,472 views 13080 18544 Index page accessed
+INFO 2024-03-27 21:07:18,473 basehttp 13080 18544 "GET / HTTP/1.1" 200 13
+ERROR 2024-03-27 21:07:34,098 views 13080 18544 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\django_home_work\myproject\myapp\views.py", line 14, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2024-03-27 21:07:34,100 basehttp 13080 18544 "GET /about/ HTTP/1.1" 200 27
+INFO 2024-03-27 21:07:50,681 autoreload 13080 13288 C:\Users\User\Desktop\django_home_work\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 21:07:51,272 autoreload 10716 16676 Watching for file changes with StatReloader
+DEBUG 2024-03-27 21:07:53,244 views 10716 6988 About page accessed
+INFO 2024-03-27 21:07:53,245 basehttp 10716 6988 "GET /about/ HTTP/1.1" 200 23
+INFO 2024-03-27 21:23:19,856 autoreload 9704 11288 Watching for file changes with StatReloader
+INFO 2024-03-27 21:23:26,693 basehttp 9704 2708 "GET / HTTP/1.1" 200 98
+WARNING 2024-03-27 21:23:59,267 log 9704 2708 Not Found: /prefix/
+WARNING 2024-03-27 21:23:59,267 basehttp 9704 2708 "GET /prefix/ HTTP/1.1" 404 2428
+INFO 2024-03-27 21:24:02,651 basehttp 9704 2708 "GET /about/ HTTP/1.1" 200 153
+INFO 2024-03-27 21:30:48,526 autoreload 9704 11288 C:\Users\User\Desktop\django_home_work\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 21:30:49,118 autoreload 12964 13024 Watching for file changes with StatReloader
+INFO 2024-03-27 21:30:51,580 autoreload 12964 13024 C:\Users\User\Desktop\django_home_work\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 21:30:52,181 autoreload 8332 13120 Watching for file changes with StatReloader
+INFO 2024-03-27 21:30:54,624 autoreload 8332 13120 C:\Users\User\Desktop\django_home_work\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 21:30:55,204 autoreload 15364 17216 Watching for file changes with StatReloader
+INFO 2024-03-27 21:31:59,591 autoreload 15364 17216 C:\Users\User\Desktop\django_home_work\myproject\myproject\settings.py changed, reloading.
+�������� ������� �������������
+�������� ������� �������������
+�������� ������������� � ����
+Посещено представление о себе
+Посещено представление о себе
+Посещено представление о себе
+Посещено главное представление
+Посещено главное представление
+Посещено главное представление
+Посещено главное представление
+Посещено представление о себе
+Посещение страницы с описанием магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение главной страницы магазина
+Посещение страницы с описанием магазина
+Посещение страницы с описанием магазина
+Посещение главной страницы магазина
+Посещение страницы с описанием магазина
+Посещение главной страницы магазина
+Посещение страницы с описанием магазина
+Посещение главной страницы магазина
+Посещение страницы с описанием магазина
+Посещение страницы с описанием магазина
+Посещение главной страницы магазина
