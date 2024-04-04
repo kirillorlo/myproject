@@ -1,0 +1,20 @@
+<h1>Заказанные товары за неделю:</h1>
+<ul>
+  {% for product in products_week %}
+    <li>{{ product }}</li>
+  {% endfor %}
+</ul>
+
+<h1>Заказанные товары за месяц:</h1>
+<ul>
+  {% for product in products_month %}
+    <li>{{ product }}</li>
+  {% endfor %}
+</ul>
+
+<h1>Заказанные товары за год:</h1>
+<ul>
+  {% for product in products_year %}
+    <li>{{ product }}</li>
+  {% endfor %}
+</ul>
