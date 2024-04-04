@@ -1,7 +1,5 @@
-from django.shortcuts import render
-from django.utils import timezone
-from datetime import timedelta
-from .models import Order
+import logging
+from django.http import HttpResponse
 
 logger = logging.getLogger(__name__)
 
@@ -25,27 +23,3 @@ def about(request):
     logger.info('Посещение страницы с описанием магазина')
 
     return HttpResponse(html)
-
-
-def client_orders(request):
-    # Получить текущую дату и время
-    current_time = timezone.now()
-    # Определение даты начала периода
-    week_ago = current_time - timedelta(days=7)
-    month_ago = current_time - timedelta(days=30)
-    year_ago = current_time - timedelta(days=365)
-    # Получение списка всех заказов клиента за разные периоды
-    orders_week = Order.objects.filter(client=request.user, created_at__gte=week_ago)
-    orders_month = Order.objects.filter(client=request.user, created_at__gte=month_ago)
-    orders_year = Order.objects.filter(client=request.user, created_at__gte=year_ago)
-    # Сортировка списка товаров
-    products_week = orders_week.values_list('product', flat=True).distinct()
-    products_month = orders_month.values_list('product', flat=True).distinct()
-    products_year = orders_year.values_list('product', flat=True).distinct()
-    # Передача данных в шаблон
-    context = {
-        'products_week': products_week,
-        'products_month': products_month,
-        'products_year': products_year
-    }
-    return render(request, 'client_orders.html', context)
