@@ -1,8 +1,10 @@
 import logging
+import datetime
 from django.http import HttpResponse
 from datetime import date, timedelta
-from myapp.models import Order
+from myapp.models import Order, Product
 from django.shortcuts import render, get_object_or_404
+from django.utils import timezone
 
 logger = logging.getLogger(__name__)
 
@@ -28,23 +30,24 @@ def about(request):
     return HttpResponse(html)
 
 
-def order_detail(request, client_id):
-    order = get_object_or_404(Order, pk=client_id)
-    return render(request, 'myapp/order_detail.html', {'order': order})
-
 # def order_detail(request, client_id):
-#     today = date.today()
-#     last_week = today - timedelta(days=7)
-#     last_month = today - timedelta(days=30)
-#     last_year = today - timedelta(days=365)
+#     order = get_object_or_404(Order, pk=client_id)
+#     return render(request, 'myapp/order_detail.html', {'order': order})
 
-#     orders_last_week = Order.objects.filter(client__id=client_id, order_date__range=[last_week, today]).distinct()
-#     orders_last_month = Order.objects.filter(client__id=client_id, order_date__range=[last_month, today]).distinct()
-#     orders_last_year = Order.objects.filter(client__id=client_id, order_date__range=[last_year, today]).distinct()
 
-#     context = {
-#         'orders_last_week': orders_last_week,
-#         'orders_last_month': orders_last_month,
-#         'orders_last_year': orders_last_year
-#     }
-#     return render(request, 'myapp/order_detail.html', context)
+def order_detail(request, client_id):
+    today = timezone.now().date()
+    last_week = today - timedelta(days=7)
+    last_month = today - timedelta(days=30)
+    last_year = today - timedelta(days=365)
+
+    orders_last_week = Order.objects.filter(client__id=client_id, order_date__gte=last_week).distinct()
+    orders_last_month = Order.objects.filter(client__id=client_id, order_date__gte=last_month).distinct()
+    orders_last_year = Order.objects.filter(client__id=client_id, order_date__gte=last_year).distinct()
+
+    context = {
+        'orders_last_week': orders_last_week,
+        'orders_last_month': orders_last_month,
+        'orders_last_year': orders_last_year
+    }
+    return render(request, 'myapp/order_detail.html', context)
