@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Детали заказа</title>
+</head>
+<body>
+    <h1>Детали заказа</h1>
+    <h2>Заказ №{{ order.id }}</h2>
+    <p>Клиент: {{ order.client }}</p>
+    <p>Дата оформления: {{ order.order_date }}</p>
+    <p>Товары:</p>
+    <ul>
+        {% for product in order.products.all %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    </ul>
+    <p>Общая сумма: {{ order.total_amount }}</p>
+</body>
+</html>
+
+<!-- <h2>Orders for the Last Week:</h2>
+<ul>
+    {% for order in orders_last_week %}
+        <li>{{ order.str }}</li>
+    {% empty %}
+        <li>No orders found.</li>
+    {% endfor %}
+</ul>
+
+<h2>Orders for the Last Month:</h2>
+<ul>
+    {% for order in orders_last_month %}
+        <li>{{ order.str }}</li>
+    {% empty %}
+        <li>No orders found.</li>
+    {% endfor %}
+</ul>
+
+<h2>Orders for the Last Year:</h2>
+<ul>
+    {% for order in orders_last_year %}
+        <li>{{ order.str }}</li>
+    {% empty %}
+        <li>No orders found.</li>
+    {% endfor %}
+</ul> -->
