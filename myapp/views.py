@@ -5,6 +5,7 @@ from datetime import date, timedelta
 from myapp.models import Order, Product
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
+from .forms import ProductForm
 
 logger = logging.getLogger(__name__)
 
@@ -51,3 +52,17 @@ def order_detail(request, client_id):
         'orders_last_year': orders_last_year
     }
     return render(request, 'myapp/order_detail.html', context)
+
+
+def product_form(request):
+    if request.method == 'POST':
+        form = ProductForm(request.Form)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            quantity = form.cleaned_data['quantity']
+            date_added = form.cleaned_data['date_added']
+    else:
+        form = ProductForm()
+        return render(request, 'myapp/product_form.html', {'form': form})
