@@ -56,13 +56,16 @@ def order_detail(request, client_id):
 
 def product_form(request):
     if request.method == 'POST':
-        form = ProductForm(request.Form)
+        form = ProductForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data['name']
             description = form.cleaned_data['description']
             price = form.cleaned_data['price']
             quantity = form.cleaned_data['quantity']
             date_added = form.cleaned_data['date_added']
+            product = Product(name=name, description=description, price=price, quantity=quantity, date_added=date_added)
+            product.save()
+            return HttpResponse('Форма успешно отправлена!')
     else:
         form = ProductForm()
-        return render(request, 'myapp/product_form.html', {'form': form})
+    return render(request, 'myapp/product_form.html', {'form': form})
