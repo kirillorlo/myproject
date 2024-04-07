@@ -6,6 +6,7 @@ from myapp.models import Order, Product
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from .forms import ProductForm
+from django.core.files.storage import FileSystemStorage
 
 logger = logging.getLogger(__name__)
 
@@ -63,6 +64,9 @@ def product_form(request):
             price = form.cleaned_data['price']
             quantity = form.cleaned_data['quantity']
             date_added = form.cleaned_data['date_added']
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
             product = Product(name=name, description=description, price=price, quantity=quantity, date_added=date_added)
             product.save()
             return HttpResponse('Форма успешно отправлена!')

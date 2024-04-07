@@ -1,5 +1,6 @@
 from django import forms
 import datetime
+from .models import Product
 
 
 class ProductForm(forms.Form):
@@ -7,9 +8,4 @@ class ProductForm(forms.Form):
     description = forms.CharField(widget=forms.Textarea)
     price = forms.DecimalField(max_digits=10, decimal_places=2)
     quantity = forms.IntegerField()
-    date_added = forms.DateField(widget=forms.HiddenInput, initial=datetime.date.today)
-
-# форму для редактирования товаров в базе
-# данных, Измените модель продукта, добавьте поле для хранения
-# фотографии продукта.
-# Создайте форму, которая позволит сохранять фото.
+    image = forms.ImageField()
